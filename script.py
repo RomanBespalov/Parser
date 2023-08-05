@@ -5,7 +5,7 @@ from bs4 import BeautifulSoup
 
 
 def parse_url(url):
-    """Функция для парсинга данных по урл."""
+    """Функция для парсинга данных по URL и возврата списка с результатами."""
     response = requests.get(url)
 
     if response.status_code == 200:
